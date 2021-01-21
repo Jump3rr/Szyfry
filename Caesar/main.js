@@ -1,5 +1,3 @@
-//const tekst = document.querySelector('#text').value;
-//const klucz = document.querySelector('#klucz');
 document.querySelector('#szyfruj').addEventListener('click',szyfruj);
 const pokazTekst = document.querySelector('#szyfr');
 const alfabet = ['A','Ą','B','C','Ć','D','E','Ę','F','G','H','I','J','K','L','Ł','M','N','Ń','O','Ó','P','Q','R','S','Ś','T','U','V','W','X','Y','Z','Ź','Ż'];
@@ -12,7 +10,7 @@ function szyfruj() {
     const HTMLNode = document.createElement('section');
     const HTMLTekst = document.createElement('h1');
     let i=0;
-    //klucz = parseInt(klucz, 10);
+    
     tekst.split('')
         .forEach(element => { 
             for(let j=0; j<alfabet.length;j++) {
@@ -37,19 +35,6 @@ function szyfruj() {
         }
     }
 
-    /*for(let i=0; i<tekst.length;i++) {
-        
-        var c = tekst.charAt(i);
-        if(typeof znaki[c]=='number')
-            znaki[c]++;
-        else
-            znaki[c]=1;
-        
-        znaki.forEach(element => {
-            pokazTekst.appendChild(element);
-        });
-        
-    }*/
     let xx = znaki.join("");
     HTMLTekst.innerHTML = xx;
     HTMLNode.appendChild(HTMLTekst);
