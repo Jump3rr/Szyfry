@@ -39,5 +39,4 @@ function szyfruj() {
     HTMLTekst.innerHTML = xx;
     HTMLNode.appendChild(HTMLTekst);
     pokazTekst.appendChild(HTMLNode);
-
 }

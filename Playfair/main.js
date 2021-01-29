@@ -2,7 +2,6 @@ document.querySelector('#szyfruj').addEventListener('click',szyfruj);
 document.querySelector('#odszyfruj').addEventListener('click',odszyfruj);
 const pokazTekst = document.querySelector('#szyfr');
 const alfabet = ['A','Ą','B','C','Ć','D','E','Ę','F','G','H','I','J','K','L','Ł','M','N','Ń','O','Ó','P','Q','R','S','Ś','T','U','V','W','X','Y','Z','Ź','Ż'];
-//const alfabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 const HTMLNode = document.createElement('section');
 const HTMLTekst = document.createElement('h1');
 const tablica = [
@@ -26,6 +25,7 @@ function szyfruj() {
         else
             znaki[znaki.length] = 'Z';
     }
+
     let wynik = [];
 
     for(let i=0; i<kluczZnaki.length;i++) {
@@ -108,7 +108,6 @@ function szyfruj() {
 
         }
     }
-    console.log(tablica);
     let xx = wynik.join("");
     HTMLTekst.innerHTML = xx;
     HTMLNode.appendChild(HTMLTekst);

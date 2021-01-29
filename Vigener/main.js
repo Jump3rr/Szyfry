@@ -1,7 +1,6 @@
 document.querySelector('#szyfruj').addEventListener('click',szyfruj);
 const pokazTekst = document.querySelector('#szyfr');
 const alfabet = ['A','Ą','B','C','Ć','D','E','Ę','F','G','H','I','J','K','L','Ł','M','N','Ń','O','Ó','P','Q','R','S','Ś','T','U','V','W','X','Y','Z','Ź','Ż'];
-//const alfabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 document.querySelector('#odszyfruj').addEventListener('click',odszyfruj);
 const HTMLNode = document.createElement('section');
 const HTMLTekst = document.createElement('h1');
@@ -48,8 +47,8 @@ function szyfruj(kluczZnaki) {
     HTMLTekst.innerHTML = xx;
     HTMLNode.appendChild(HTMLTekst);
     pokazTekst.appendChild(HTMLNode); 
-
 }
+
 function odszyfruj() {
     let kluczZnaki = odczytajKlucz();
     let znaki = odczytajTekst();

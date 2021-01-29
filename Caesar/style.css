@@ -1,0 +1,29 @@
+#klucz {
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 50px;
+}
+#tekst {
+    margin-left: 2%;
+    margin-bottom: -5%;
+    width: 150px;
+    height: 150px; 
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    word-wrap: break-word;
+    overflow: auto; 
+}
+#szyfruj {
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+section {
+    color: yellow;
+    font:bold;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
